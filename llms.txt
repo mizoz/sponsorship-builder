@@ -1,0 +1,38 @@
+# Sponsorship Package Builder and Pricing Calculator
+
+> A free, browser-only tool for event organizers, creators and venues to build sponsorship tiers (Bronze, Silver, Gold, Title or your own names), estimate what each tier is worth, set a suggested price, check cost to deliver and margin, and print a one-page sponsor sheet. No sign-up, no tracking, nothing leaves the browser.
+
+URL: https://mizoz.github.io/sponsorship-builder/
+
+## How the estimate works
+
+- Tier value = sum of (impressions x CPM / 1,000) for attention items + sum of fixed dollar values (booth, tickets, speaking slot, naming rights).
+- Exclusive tiers get a premium you set (25% by default).
+- Suggested price = value x a multiplier you choose per tier, rounded.
+- Margin = price - (cost per unit x quantity + tier fixed cost).
+- All numbers are planning estimates from editable assumptions, not market guarantees.
+
+## Default CPMs (adjustable, mostly USD benchmarks from 2025 to 2026)
+
+| Channel | Default CPM | Impressions per unit |
+|---|---|---|
+| On-site signage | $5 (out-of-home $3 to $8) | attendance x days x sign views per day |
+| Stage / MC mention | $20 (host-read audio $18 to $26) | attendance x share in the room |
+| Social post | $8 (Meta average about $8) | followers x reach rate |
+| Newsletter feature | $32 (sponsorship median about $32) | list size x open rate |
+| Website logo | $3 (display average about $3) | monthly visits per month listed |
+
+## Sanity checks it runs
+
+- Higher tiers must cost more than lower tiers; gaps under 1.3x or over 4x are flagged.
+- A higher tier should include at least everything the tier below gets.
+- Negative margin or margin under 30% is flagged.
+- Exclusive deliverables sold more than once are flagged.
+
+## Outputs
+
+Printable one-page sponsor sheet (save as PDF), markdown and plain text package, CSV, JSON import and export, named local saves and a share link.
+
+## Author
+
+Ahmed Mahmoud, Calgary, Alberta. Founder of FirstShow (https://firstshow.ca). Builds free web tools for marketers, event and comms teams. https://mizoz.github.io/
