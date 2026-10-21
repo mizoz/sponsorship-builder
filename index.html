@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sponsorship Package Template and Pricing Calculator</title>
+<meta name="description" content="Free event sponsorship pricing calculator. Build Bronze to Title sponsorship tiers, price them with editable CPMs and print a one-page sponsor sheet.">
+<link rel="canonical" href="https://mizoz.github.io/sponsorship-builder/">
+<meta name="theme-color" content="#0b6e4f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131518" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sponsorship Package Builder and Pricing Calculator">
+<meta property="og:description" content="Build and price event sponsorship tiers and print a one-page sponsor sheet. Free, no sign-up, runs in your browser.">
+<meta property="og:url" content="https://mizoz.github.io/sponsorship-builder/">
+<meta property="og:image" content="https://mizoz.github.io/sponsorship-builder/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sponsorship Package Builder and Pricing Calculator">
+<meta name="twitter:description" content="Build and price event sponsorship tiers and print a one-page sponsor sheet. Free, no sign-up.">
+<meta name="twitter:image" content="https://mizoz.github.io/sponsorship-builder/og.png">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Sponsorship Package Builder",
+      "url": "https://mizoz.github.io/sponsorship-builder/",
+      "description": "Build and price event sponsorship tiers with editable CPM assumptions, check margins and tier gaps, and print a one-page sponsor sheet.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "datePublished": "2026-10-21",
+      "isAccessibleForFree": true,
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "CAD"},
+      "author": {"@type":"Person","name":"Ahmed Mahmoud","url":"https://mizoz.github.io/","jobTitle":"Founder, FirstShow","address":{"@type":"PostalAddress","addressLocality":"Calgary","addressRegion":"AB","addressCountry":"CA"},"sameAs":["https://github.com/mizoz","https://www.linkedin.com/in/ahmed-m-82ba28169/","https://firstshow.ca"]}
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to build and price an event sponsorship package",
+      "step": [
+        {"@type": "HowToStep", "name": "Enter event basics", "text": "Add attendance, number of days, audience description and your digital reach: email list, social followers and monthly site visits."},
+        {"@type": "HowToStep", "name": "Check the assumptions", "text": "Review the CPM for each channel, reach rates and the dollar value of fixed items like booths and tickets. Change anything you have better numbers for."},
+        {"@type": "HowToStep", "name": "Tick deliverables into tiers", "text": "Tick each deliverable into Bronze, Silver, Gold or Title and set quantities, spots and the price multiplier."},
+        {"@type": "HowToStep", "name": "Review price, margin and checks", "text": "Read each tier's estimated value, suggested price, cost to deliver and margin, then fix any sanity check warnings."},
+        {"@type": "HowToStep", "name": "Export the package", "text": "Print the one-page sponsor sheet to PDF, copy the package as text or markdown, or download CSV or JSON."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "How much should I charge for an event sponsorship?", "acceptedAnswer": {"@type": "Answer", "text": "Start with what the sponsor gets: estimate the media value of every impression (people who see the logo, hear the mention, open the email) at a channel CPM, add the dollar value of fixed items like booths and tickets, then multiply by a factor that reflects demand and your relationship. Check that the price covers your cost to deliver with room to spare, and that each tier is a clear step up from the one below."}},
+        {"@type": "Question", "name": "What is CPM and why use it to price sponsorships?", "acceptedAnswer": {"@type": "Answer", "text": "CPM is cost per thousand impressions. Sponsors already buy ads on a CPM basis, so expressing your signage, stage mentions, social posts and newsletter features in the same unit gives them a familiar way to compare your offer with paid media."}},
+        {"@type": "Question", "name": "How many sponsorship tiers should I have?", "acceptedAnswer": {"@type": "Answer", "text": "Three or four is the usual sweet spot, for example Bronze, Silver, Gold and one Title sponsor. Fewer tiers are easier to sell. Each step up should add something a sponsor actually wants, and prices usually rise by about 1.5 to 3 times per tier."}},
+        {"@type": "Question", "name": "What should a sponsorship package include?", "acceptedAnswer": {"@type": "Answer", "text": "Event name, date and location, who the audience is, your reach numbers, the tiers with price and deliverables, how many spots each tier has, any exclusivity, deadlines and a contact. Keep it to one page; the full deck can come later."}},
+        {"@type": "Question", "name": "Are these numbers what sponsors will pay?", "acceptedAnswer": {"@type": "Answer", "text": "No. They are planning estimates built from assumptions you can see and change. Real prices depend on your market, audience fit, track record and how badly a sponsor wants that audience. Use the numbers to start a conversation and to make sure a deal is worth doing."}},
+        {"@type": "Question", "name": "How do I value booths, speaking slots or naming rights?", "acceptedAnswer": {"@type": "Answer", "text": "These are not impression-based, so the calculator treats them as fixed values you set. Use what a comparable booth or speaking slot sells for, what a ticket costs, or what the sponsor would pay to get the same face time elsewhere."}},
+        {"@type": "Question", "name": "What is category exclusivity worth?", "acceptedAnswer": {"@type": "Answer", "text": "Exclusivity means no competitor in the same category can sponsor. It is worth a premium because it removes rivals from the room. The calculator adds a percentage you control, 25 percent by default, to any tier marked exclusive."}},
+        {"@type": "Question", "name": "Does my event data leave my browser?", "acceptedAnswer": {"@type": "Answer", "text": "No. Everything runs in your browser. Your inputs are saved only in this browser's local storage unless you export a file or copy a share link yourself."}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="top wrap">
+  <h1>Sponsorship package builder and pricing calculator</h1>
+  <p class="lede">Build Bronze, Silver, Gold and Title sponsorship tiers, see what each one is worth with a formula you can read and change, and print a one-page sponsor sheet. Free, no sign-up.</p>
+  <p class="privacy"><strong>Private by design:</strong> everything runs in your browser. Nothing you type is sent anywhere. Your work is saved in this browser only.</p>
+</header>
+
+<main class="wrap">
+  <section class="panel" aria-labelledby="h-event">
+    <div class="row">
+      <h2 id="h-event" style="margin:0"><span class="step">1</span>Event basics</h2>
+      <span class="spacer"></span>
+      <label class="sr-only" for="example">Load an example</label>
+      <select id="example" style="width:auto">
+        <option value="">Load an example...</option>
+        <option value="festival">Summer music festival</option>
+        <option value="conference">B2B conference</option>
+        <option value="creator">Creator meetup</option>
+        <option value="blank">Start blank</option>
+      </select>
+    </div>
+    <div class="grid c3" style="margin-top:12px">
+      <div><label for="ev-name">Event name</label><input id="ev-name" type="text" data-ev="name" autocomplete="off"></div>
+      <div><label for="ev-date">Date</label><input id="ev-date" type="text" data-ev="date" placeholder="e.g. July 18 to 19, 2027" autocomplete="off"></div>
+      <div><label for="ev-loc">Location</label><input id="ev-loc" type="text" data-ev="location" autocomplete="off"></div>
+    </div>
+    <div class="grid c4" style="margin-top:12px">
+      <div><label for="ev-att">Attendance (per day)</label><input id="ev-att" type="number" min="0" step="1" inputmode="numeric" data-ev="attendance"></div>
+      <div><label for="ev-days">Days</label><input id="ev-days" type="number" min="1" step="1" inputmode="numeric" data-ev="days"></div>
+      <div><label for="ev-email">Email list</label><input id="ev-email" type="number" min="0" step="1" inputmode="numeric" data-ev="email"></div>
+      <div><label for="ev-social">Social followers (total)</label><input id="ev-social" type="number" min="0" step="1" inputmode="numeric" data-ev="social"></div>
+      <div><label for="ev-visits">Site visits per month</label><input id="ev-visits" type="number" min="0" step="1" inputmode="numeric" data-ev="visits"></div>
+      <div><label for="ev-ticket">Ticket price</label><input id="ev-ticket" type="number" min="0" step="1" inputmode="decimal" data-ev="ticket"></div>
+      <div><label for="cur">Currency</label>
+        <select id="cur">
+          <option>CAD</option><option>USD</option><option>EUR</option><option>GBP</option><option>AUD</option>
+        </select></div>
+      <div><label for="round">Round prices to</label>
+        <select id="round">
+          <option value="1">nearest 1</option><option value="50">nearest 50</option><option value="100">nearest 100</option><option value="250">nearest 250</option><option value="500">nearest 500</option>
+        </select></div>
+    </div>
+    <div style="margin-top:12px"><label for="ev-aud">Audience (who comes, in one or two lines)</label><textarea id="ev-aud" data-ev="audience" rows="2"></textarea></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-assume">
+    <h2 id="h-assume"><span class="step">2</span>Assumptions</h2>
+    <p class="hint">Every number here drives the estimate. The CPMs are starting points from published 2025 to 2026 benchmarks (mostly US dollars). Swap in your own if you have them.</p>
+    <h3>CPM by channel (cost per 1,000 impressions)</h3>
+    <div class="grid c4">
+      <div><label for="cpm-signage">On-site signage</label><input id="cpm-signage" type="number" min="0" step="0.5" data-cpm="signage"><span class="unit">OOH benchmark $3 to $8</span></div>
+      <div><label for="cpm-stage">Stage / MC mention</label><input id="cpm-stage" type="number" min="0" step="0.5" data-cpm="stage"><span class="unit">host-read audio $18 to $26</span></div>
+      <div><label for="cpm-social">Social post</label><input id="cpm-social" type="number" min="0" step="0.5" data-cpm="social"><span class="unit">Meta average about $8</span></div>
+      <div><label for="cpm-email">Newsletter feature</label><input id="cpm-email" type="number" min="0" step="0.5" data-cpm="email"><span class="unit">sponsorship median about $32</span></div>
+      <div><label for="cpm-web">Website logo / listing</label><input id="cpm-web" type="number" min="0" step="0.5" data-cpm="web"><span class="unit">display average about $3</span></div>
+    </div>
+    <h3>How many impressions each unit gets</h3>
+    <div class="grid c4">
+      <div><label for="a-views">Sign views per attendee per day</label><input id="a-views" type="number" min="0" step="0.5" data-a="signViews"></div>
+      <div><label for="a-room">Attendees in the room for a mention (%)</label><input id="a-room" type="number" min="0" max="100" step="1" data-a="roomShare"></div>
+      <div><label for="a-reach">Social reach per post (% of followers)</label><input id="a-reach" type="number" min="0" max="100" step="0.5" data-a="socialReach"></div>
+      <div><label for="a-open">Email open rate (%)</label><input id="a-open" type="number" min="0" max="100" step="0.5" data-a="openRate"></div>
+      <div><label for="a-excl">Exclusivity premium (%)</label><input id="a-excl" type="number" min="0" step="1" data-a="exclPremium"></div>
+      <div><label for="a-mult">Multiplier for new tiers</label><input id="a-mult" type="number" min="0" step="0.05" data-a="mult"></div>
+    </div>
+    <p class="hint">Reach and open rates vary a lot. Your own analytics (post insights, email reports) beat any default.</p>
+  </section>
+
+  <section class="panel" aria-labelledby="h-items">
+    <h2 id="h-items"><span class="step">3</span>Deliverables</h2>
+    <p class="hint">What a sponsor can get. CPM items are valued from your reach. Fixed items use the dollar value you set per unit. Cost is what it costs you to deliver one unit (printing, staff, food, the ticket you give away). Mark items only one sponsor can have as exclusive.</p>
+    <div class="scroll"><table id="items">
+      <thead><tr><th scope="col">Deliverable</th><th scope="col">Valued by</th><th scope="col" class="num">Impressions / unit</th><th scope="col" class="num">Value / unit</th><th scope="col" class="num">Cost / unit</th><th scope="col">Exclusive</th><th scope="col"><span class="sr-only">Remove</span></th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+    <div class="row" style="margin-top:10px"><button type="button" id="add-item">+ Add deliverable</button></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-tiers">
+    <h2 id="h-tiers"><span class="step">4</span>Sponsorship tiers</h2>
+    <p class="hint">List tiers from lowest to highest. Tick a deliverable into a tier and set how many. Spots is how many sponsors you will sell at that level. Fixed cost covers anything not tied to a deliverable (a custom activation, a dinner).</p>
+    <div class="scroll"><table id="matrix"><thead></thead><tbody></tbody></table></div>
+    <div class="row" style="margin-top:10px">
+      <button type="button" id="add-tier">+ Add tier</button>
+      <button type="button" id="del-tier" class="danger">Remove last tier</button>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-results" aria-live="polite">
+    <h2 id="h-results"><span class="step">5</span>Value, price and margin</h2>
+    <p class="estimate-note"><strong>Planning estimates, not market prices.</strong> These numbers come from the assumptions above. They help you set a sensible starting price and check a deal is worth doing. What a sponsor pays depends on fit, demand and negotiation.</p>
+    <div class="formula" id="formula"></div>
+    <div class="cards" id="cards" style="margin-top:14px"></div>
+    <div class="summary-strip" id="totals"></div>
+    <h3>Sanity checks</h3>
+    <ul id="checks"></ul>
+  </section>
+
+  <section class="panel" id="sheet-wrap" aria-labelledby="h-sheet">
+    <h2 id="h-sheet"><span class="step">6</span>Sponsor sheet and export</h2>
+    <div class="grid c2">
+      <div><label for="ev-contact">Contact line</label><input id="ev-contact" type="text" data-ev="contact" placeholder="Name, email, phone" autocomplete="off"></div>
+      <div><label for="ev-deadline">Deadline or note</label><input id="ev-deadline" type="text" data-ev="deadline" placeholder="e.g. Commit by May 1 for print" autocomplete="off"></div>
+    </div>
+    <div style="margin-top:10px"><label for="ev-notes">Extra notes for the sheet</label><textarea id="ev-notes" data-ev="notes" rows="2" placeholder="Custom packages welcome. In-kind sponsors, talk to us."></textarea></div>
+    <div class="row" style="margin:10px 0">
+      <label class="check"><input type="checkbox" id="opt-value"> Show estimated value on the sheet</label>
+      <label class="check"><input type="checkbox" id="opt-qty" checked> Show quantities</label>
+    </div>
+    <div class="row" style="margin-bottom:14px">
+      <button type="button" class="primary" id="print">Print / save as PDF</button>
+      <button type="button" id="copy-md">Copy markdown</button>
+      <button type="button" id="copy-txt">Copy plain text</button>
+      <button type="button" id="dl-csv">Download CSV</button>
+    </div>
+    <div id="sheet"></div>
+
+    <h3>Text version</h3>
+    <label for="out" class="sr-only">Package as text</label>
+    <textarea id="out" readonly></textarea>
+
+    <h3>Save and load</h3>
+    <p class="hint">Your work autosaves in this browser. Save named versions, move them between computers as JSON, or share a link that holds the whole package.</p>
+    <div class="row">
+      <label for="save-name" class="sr-only">Save name</label>
+      <input id="save-name" type="text" placeholder="Name this version" style="max-width:240px" autocomplete="off">
+      <button type="button" id="save">Save</button>
+      <label for="saves" class="sr-only">Saved versions</label>
+      <select id="saves" style="max-width:240px"></select>
+      <button type="button" id="load">Load</button>
+      <button type="button" id="del-save" class="danger">Delete</button>
+    </div>
+    <div class="row" style="margin-top:8px">
+      <button type="button" id="dl-json">Export JSON</button>
+      <button type="button" id="import-btn">Import JSON</button>
+      <input id="import" type="file" accept=".json,application/json" hidden>
+      <button type="button" id="share">Copy share link</button>
+      <button type="button" id="reset" class="danger">Reset to example</button>
+    </div>
+  </section>
+
+  <article class="content" aria-labelledby="h-how">
+    <h2 id="h-how">How to use this sponsorship package template</h2>
+    <ol class="how">
+      <li><strong>Enter event basics.</strong> Attendance per day, days, and your digital reach: email list, total social followers, monthly site visits.</li>
+      <li><strong>Check the assumptions.</strong> CPMs, reach and open rates, and fixed values like booth and ticket price. Change anything you know better.</li>
+      <li><strong>Tick deliverables into tiers.</strong> Set quantities, how many spots each tier has, and the price multiplier.</li>
+      <li><strong>Read the results.</strong> Value, suggested price, cost to deliver, margin and the sanity checks.</li>
+      <li><strong>Export.</strong> Print the one-page sheet to PDF, copy it as markdown or text, or download CSV and JSON.</li>
+    </ol>
+
+    <h2 id="h-pricing">How to price sponsorships</h2>
+    <p>Most event organizers guess, or copy someone else's numbers. A better start is to work out what the sponsor is actually buying. There are two kinds of things in a package:</p>
+    <ul class="plain">
+      <li><strong>Attention.</strong> Logos on signs, a mention from the stage, a social post, a feature in your newsletter, a logo on your site. Each one puts the brand in front of people a number of times. Advertisers price attention as CPM: cost per thousand impressions.</li>
+      <li><strong>Access and stuff.</strong> A booth, a speaking slot, tickets, sampling, naming rights. These are valued at what they would cost the sponsor elsewhere, or what you sell them for.</li>
+    </ul>
+    <p>The calculator adds the two up:</p>
+    <p class="formula">value = Σ (impressions × CPM ÷ 1,000) + Σ (fixed value × quantity)
+if exclusive: value × (1 + exclusivity premium)
+suggested price = value × multiplier, rounded
+margin = price − (Σ cost per unit × quantity + fixed tier cost)</p>
+    <p>The multiplier is where judgement comes in. Below 1 if you are new, the audience is small or you need the money in early. Above 1 if the audience is hard to reach any other way, you have a track record, or several brands want the same spot. The point is not to hit a "correct" number. It's to know what you're giving away and to make sure every tier pays for itself.</p>
+
+    <h3>Default CPMs used here</h3>
+    <div class="scroll"><table>
+      <thead><tr><th scope="col">Channel</th><th scope="col" class="num">Default CPM</th><th scope="col">Benchmark range</th><th scope="col">Impressions per unit</th></tr></thead>
+      <tbody>
+        <tr><td>On-site signage</td><td class="num">$5</td><td>Out-of-home $3 to $8</td><td>attendance × days × sign views per day</td></tr>
+        <tr><td>Stage / MC mention</td><td class="num">$20</td><td>Host-read audio $18 to $26</td><td>attendance × share in the room</td></tr>
+        <tr><td>Social post</td><td class="num">$8</td><td>Meta average about $8</td><td>followers × reach rate</td></tr>
+        <tr><td>Newsletter feature</td><td class="num">$32</td><td>Sponsorship median about $32</td><td>email list × open rate</td></tr>
+        <tr><td>Website logo / listing</td><td class="num">$3</td><td>Display average about $3</td><td>monthly visits per month listed</td></tr>
+      </tbody>
+    </table></div>
+    <p class="hint">Ranges are from public 2025 to 2026 industry benchmarks, mostly in US dollars, listed in the project README. They're there so you aren't starting from zero. They are adjustable and not a promise of what anyone will pay.</p>
+
+    <h2 id="h-tiers-how">Sponsorship tiers: how many and what goes in each</h2>
+    <p>Three or four tiers is plenty. More than that and sponsors spend the meeting comparing columns instead of saying yes. A setup that works for a lot of events:</p>
+    <ul class="plain">
+      <li><strong>Bronze</strong>: an easy yes for local businesses. Logo on site and signage, a social thank-you, a couple of tickets.</li>
+      <li><strong>Silver</strong>: adds something they can feel, like a newsletter feature or more tickets.</li>
+      <li><strong>Gold</strong>: adds presence: a booth, a stage mention, sampling.</li>
+      <li><strong>Title</strong>: one sponsor, exclusive. Naming rights, a speaking slot, the most of everything.</li>
+    </ul>
+    <p>Each tier should include everything from the tier below plus something new. Prices usually step up about 1.5 to 3 times per tier. If two tiers are priced too close, nobody upgrades. If the gap is huge, you lose the sponsor who would have paid somewhere in the middle. The sanity checks flag both.</p>
+    <p>Keep spots limited. "Two Gold spots" sells better than an open-ended list, and it protects the sponsors who already paid.</p>
+
+    <h2 id="h-deck">What goes in a sponsorship deck</h2>
+    <p>The one-page sheet this tool prints is what you send first. If a sponsor is interested, a short deck fills in the rest:</p>
+    <ol class="how">
+      <li>The event in one sentence, with date, location and a photo that shows the crowd.</li>
+      <li>Who the audience is: age, interests, job titles, where they live. Real numbers from past years or ticket data if you have them.</li>
+      <li>Your reach: attendance, email list, followers, site visits, press.</li>
+      <li>The tiers, with price, spots and deliverables. This is the sheet.</li>
+      <li>Ideas for activations that fit their brand, not just logo placements.</li>
+      <li>What they get after the event: photos, a short recap with the numbers you promised.</li>
+      <li>Deadlines and one clear contact.</li>
+    </ol>
+    <p>Skip the ten slides about your mission. Sponsors want to know who they'll reach and what it costs.</p>
+
+    <h2 id="h-faq">Event sponsorship pricing FAQ</h2>
+    <div class="faq">
+      <details><summary>How much should I charge for an event sponsorship?</summary><p>Start with what the sponsor gets: estimate the media value of every impression (people who see the logo, hear the mention, open the email) at a channel CPM, add the dollar value of fixed items like booths and tickets, then multiply by a factor that reflects demand and your relationship. Check that the price covers your cost to deliver with room to spare, and that each tier is a clear step up from the one below.</p></details>
+      <details><summary>What is CPM and why use it to price sponsorships?</summary><p>CPM is cost per thousand impressions. Sponsors already buy ads on a CPM basis, so expressing your signage, stage mentions, social posts and newsletter features in the same unit gives them a familiar way to compare your offer with paid media.</p></details>
+      <details><summary>How many sponsorship tiers should I have?</summary><p>Three or four is the usual sweet spot, for example Bronze, Silver, Gold and one Title sponsor. Fewer tiers are easier to sell. Each step up should add something a sponsor actually wants, and prices usually rise by about 1.5 to 3 times per tier.</p></details>
+      <details><summary>What should a sponsorship package include?</summary><p>Event name, date and location, who the audience is, your reach numbers, the tiers with price and deliverables, how many spots each tier has, any exclusivity, deadlines and a contact. Keep it to one page; the full deck can come later.</p></details>
+      <details><summary>Are these numbers what sponsors will pay?</summary><p>No. They are planning estimates built from assumptions you can see and change. Real prices depend on your market, audience fit, track record and how badly a sponsor wants that audience. Use the numbers to start a conversation and to make sure a deal is worth doing.</p></details>
+      <details><summary>How do I value booths, speaking slots or naming rights?</summary><p>These are not impression-based, so the calculator treats them as fixed values you set. Use what a comparable booth or speaking slot sells for, what a ticket costs, or what the sponsor would pay to get the same face time elsewhere.</p></details>
+      <details><summary>What is category exclusivity worth?</summary><p>Exclusivity means no competitor in the same category can sponsor. It is worth a premium because it removes rivals from the room. The calculator adds a percentage you control, 25 percent by default, to any tier marked exclusive.</p></details>
+      <details><summary>Does my event data leave my browser?</summary><p>No. Everything runs in your browser. Your inputs are saved only in this browser's local storage unless you export a file or copy a share link yourself.</p></details>
+    </div>
+    <p class="hint">Last updated October 2026.</p>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><a href="https://mizoz.github.io/">Made by Ahmed Mahmoud in Calgary</a>. <a href="https://firstshow.ca">Built by the founder of FirstShow</a>.</p>
+    <p>More free tools:</p>
+    <ul>
+      <li><a href="https://mizoz.github.io/social-image-sizer/">Social image sizer</a></li>
+      <li><a href="https://mizoz.github.io/utm-builder/">UTM link builder</a></li>
+      <li><a href="https://mizoz.github.io/post-preview/">Social post preview</a></li>
+      <li><a href="https://mizoz.github.io/stream-calc/">Stream bitrate calculator</a></li>
+    </ul>
+    <p><a href="https://github.com/mizoz/sponsorship-builder">Source on GitHub</a> · MIT licence</p>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
