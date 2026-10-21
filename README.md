@@ -2,7 +2,7 @@
 
 Build event sponsorship tiers, price them with a formula you can actually read, and print a one-page sponsor sheet.
 
-**Live:** https://mizoz.github.io/sponsorship-builder/
+**Live:** https://lab.zalastack.com/sponsorship-builder/
 
 ![Tier cards with suggested price, value, cost and margin](docs/screenshot.png)
 
@@ -81,12 +81,12 @@ Then open http://localhost:8000.
 
 ## Other free tools I made
 
-- [Social image sizer](https://mizoz.github.io/social-image-sizer/)
-- [UTM link builder](https://mizoz.github.io/utm-builder/)
-- [Social post preview](https://mizoz.github.io/post-preview/)
-- [Stream bitrate calculator](https://mizoz.github.io/stream-calc/)
+- [Social image sizer](https://lab.zalastack.com/social-image-sizer/)
+- [UTM link builder](https://lab.zalastack.com/utm-builder/)
+- [Social post preview](https://lab.zalastack.com/post-preview/)
+- [Stream bitrate calculator](https://lab.zalastack.com/stream-calc/)
 
-Made by [Ahmed Mahmoud](https://mizoz.github.io/) in Calgary. Built by the founder of [FirstShow](https://firstshow.ca).
+Made by [Ahmed Mahmoud](https://lab.zalastack.com/) in Calgary. Built by the founder of [FirstShow](https://firstshow.ca).
 
 ## License
 

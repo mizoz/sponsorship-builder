@@ -2,7 +2,7 @@
 
 > A free, browser-only tool for event organizers, creators and venues to build sponsorship tiers (Bronze, Silver, Gold, Title or your own names), estimate what each tier is worth, set a suggested price, check cost to deliver and margin, and print a one-page sponsor sheet. No sign-up, no tracking, nothing leaves the browser.
 
-URL: https://mizoz.github.io/sponsorship-builder/
+URL: https://lab.zalastack.com/sponsorship-builder/
 
 ## How the estimate works
 
@@ -35,4 +35,4 @@ Printable one-page sponsor sheet (save as PDF), markdown and plain text package,
 
 ## Author
 
-Ahmed Mahmoud, Calgary, Alberta. Founder of FirstShow (https://firstshow.ca). Builds free web tools for marketers, event and comms teams. https://mizoz.github.io/
+Ahmed Mahmoud, Calgary, Alberta. Founder of FirstShow (https://firstshow.ca). Builds free web tools for marketers, event and comms teams. https://lab.zalastack.com/
